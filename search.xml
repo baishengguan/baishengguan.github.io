@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[分类标签测试文章]]></title>
+    <url>%2F2017%2F05%2F18%2F%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[分类 测试标签功能]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>Testing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[博客名字]]></title>
+    <url>%2F2017%2F05%2F17%2F%E5%8D%9A%E5%AE%A2%E5%90%8D%E5%AD%97%2F</url>
+    <content type="text"><![CDATA[Hello, everyone, this is my first blog!]]></content>
+      <tags>
+        <tag>Testing</tag>
+        <tag>Another Tag</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F05%2F16%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
