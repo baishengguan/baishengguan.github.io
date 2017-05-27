@@ -90,19 +90,19 @@
 
 
 
-<meta name="description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。可以对照源代码和字节码，解很多编译器内部的工作。">
+<meta name="description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。 同时可对照源代码和字节码，了解很多编译器内部的工作。">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java反汇编">
 <meta property="og:url" content="http://yoursite.com/2017/05/27/Java反汇编/index.html">
 <meta property="og:site_name" content="Baisheng&#39;s Blog">
-<meta property="og:description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。可以对照源代码和字节码，解很多编译器内部的工作。">
+<meta property="og:description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。 同时可对照源代码和字节码，了解很多编译器内部的工作。">
 <meta property="og:image" content="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG">
 <meta property="og:image" content="http://oqg7qiyg5.bkt.clouddn.com/Java%E5%8F%8D%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F.JPG">
-<meta property="og:updated_time" content="2017-05-27T09:14:38.606Z">
+<meta property="og:updated_time" content="2017-05-27T09:38:14.236Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java反汇编">
-<meta name="twitter:description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。可以对照源代码和字节码，解很多编译器内部的工作。">
+<meta name="twitter:description" content="javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。 同时可对照源代码和字节码，了解很多编译器内部的工作。">
 <meta name="twitter:image" content="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG">
 
 
@@ -418,7 +418,9 @@
       
 
       
-        <p>javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。<br>可以对照源代码和字节码，解很多编译器内部的工作。<br><a id="more"></a></p>
+        <p>javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。</p>
+<p>同时可对照源代码和字节码，了解很多编译器内部的工作。</p>
+<a id="more"></a>
 <pre><code>public class Main {
     public static void main(String[] args) {
     String mango = &quot;mango&quot;;
@@ -426,7 +428,9 @@
     System.out.println(s);
     }
 }
-</code></pre><p><img src="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG" alt="baisheng"></p>
+</code></pre><p>命令：<code>javap -help</code>可查看相关操作</p>
+<p><img src="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG" alt="baisheng"></p>
+<p>输入命令：<code>javap -c Main</code> 对上述代码进行反汇编</p>
 <p><img src="http://oqg7qiyg5.bkt.clouddn.com/Java%E5%8F%8D%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F.JPG" alt="baisheng"></p>
 
       

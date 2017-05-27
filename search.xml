@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Java反汇编]]></title>
     <url>%2F2017%2F05%2F27%2FJava%E5%8F%8D%E6%B1%87%E7%BC%96%2F</url>
-    <content type="text"><![CDATA[javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。可以对照源代码和字节码，解很多编译器内部的工作。 public class Main { public static void main(String[] args) { String mango = &quot;mango&quot;; String s = &quot;abc&quot; + mango + &quot;def&quot; + 47; System.out.println(s); } }]]></content>
+    <content type="text"><![CDATA[javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。 同时可对照源代码和字节码，了解很多编译器内部的工作。 public class Main { public static void main(String[] args) { String mango = &quot;mango&quot;; String s = &quot;abc&quot; + mango + &quot;def&quot; + 47; System.out.println(s); } } 命令：javap -help可查看相关操作 输入命令：javap -c Main 对上述代码进行反汇编]]></content>
       <categories>
         <category>Java</category>
       </categories>
