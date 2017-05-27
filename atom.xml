@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-27T09:42:39.218Z</updated>
+  <updated>2017-05-27T12:47:45.516Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,19 +20,12 @@
     <link href="http://yoursite.com/2017/05/27/Java%E5%8F%8D%E6%B1%87%E7%BC%96/"/>
     <id>http://yoursite.com/2017/05/27/Java反汇编/</id>
     <published>2017-05-27T08:11:27.264Z</published>
-    <updated>2017-05-27T09:42:39.218Z</updated>
+    <updated>2017-05-27T12:47:45.516Z</updated>
     
     <content type="html"><![CDATA[<p>javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。同时可对照源代码和字节码，了解很多编译器内部的工作。</p>
 <a id="more"></a>
-<p>本文将对以下代码进行反汇编：</p>
-<pre><code>public class Main {
-    public static void main(String[] args) {
-    String mango = &quot;mango&quot;;
-    String s = &quot;abc&quot; + mango + &quot;def&quot; + 47;
-    System.out.println(s);
-    }
-}
-</code></pre><p>命令： <code>javap -help</code> 可查看相关操作</p>
+<p>本文将对以下代码进行反汇编：<br>    public class Main {<br>        public static void main(String[] args) {<br>        String mango = “mango”;<br>        String s = “abc” + mango + “def” + 47;<br>        System.out.println(s);<br>        }<br>    }</p>
+<p>命令： <code>javap -help</code> 可查看相关操作</p>
 <p><img src="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG" alt="baisheng"></p>
 <p>输入命令： <code>javap -c Main</code> 对上述代码进行反汇编</p>
 <p><img src="http://oqg7qiyg5.bkt.clouddn.com/Java%E5%8F%8D%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F.JPG" alt="baisheng"></p>
