@@ -40,29 +40,6 @@
   </entry>
   
   <entry>
-    <title>博客名字</title>
-    <link href="http://yoursite.com/2017/05/17/%E5%8D%9A%E5%AE%A2%E5%90%8D%E5%AD%97/"/>
-    <id>http://yoursite.com/2017/05/17/博客名字/</id>
-    <published>2017-05-17T15:13:10.680Z</published>
-    <updated>2017-05-20T03:39:42.166Z</updated>
-    
-    <content type="html"><![CDATA[<p>显示概要信息<br><a id="more"></a><br>Hello, everyone, this is my first blog!</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;显示概要信息&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
-    
-      <category term="Another Tag" scheme="http://yoursite.com/tags/Another-Tag/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2017/05/16/hello-world/"/>
     <id>http://yoursite.com/2017/05/16/hello-world/</id>
