@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-20T04:56:20.426Z</updated>
+  <updated>2017-05-24T08:48:28.791Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/05/27/Java%E5%8F%8D%E6%B1%87%E7%BC%96/"/>
+    <id>http://yoursite.com/2017/05/27/Java反汇编/</id>
+    <published>2017-05-27T08:11:27.264Z</published>
+    <updated>2017-05-24T08:48:28.791Z</updated>
+    
+    <content type="html"><![CDATA[<p>javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。<br>可以对照源代码和字节码，解很多编译器内部的工作。</p>
+<pre><code>public class Main {
+    public static void main(String[] args) {
+    String mango = &quot;mango&quot;;
+    String s = &quot;abc&quot; + mango + &quot;def&quot; + 47;
+    System.out.println(s);
+    }
+}
+</code></pre><p><img src="http://oqg7qiyg5.bkt.clouddn.com/java%E5%8F%8D%E6%B1%87%E7%BC%96.JPG" alt="baisheng"></p>
+<p><img src="http://oqg7qiyg5.bkt.clouddn.com/Java%E5%8F%8D%E6%B1%87%E7%BC%96%E7%A8%8B%E5%BA%8F.JPG" alt="baisheng"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。&lt;br&gt;可以对照源代码和字节码，解很多编译器内部的工作。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Main {
+    public static void main(String[] a
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>分类标签测试文章</title>
