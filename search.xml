@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title><![CDATA[分类标签测试文章]]></title>
     <url>%2F2017%2F05%2F27%2FJava%E5%8F%8D%E6%B1%87%E7%BC%96%2F</url>
     <content type="text"><![CDATA[javap是JDK自带的反汇编器，可以查看java编译器生成的字节码。可以对照源代码和字节码，解很多编译器内部的工作。 public class Main { public static void main(String[] args) { String mango = &quot;mango&quot;; String s = &quot;abc&quot; + mango + &quot;def&quot; + 47; System.out.println(s); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[分类标签测试文章]]></title>
