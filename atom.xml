@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-27T15:39:40.923Z</updated>
+  <updated>2017-05-28T03:44:56.090Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,12 +20,42 @@
     <link href="http://yoursite.com/2017/05/27/20170528_Hexo-Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2017/05/27/20170528_Hexo-Github个人博客搭建/</id>
     <published>2017-05-27T15:38:16.000Z</published>
-    <updated>2017-05-27T15:39:40.923Z</updated>
+    <updated>2017-05-28T03:44:56.090Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>申请各个网站域名</li>
+<li>GitHub创建各个仓库</li>
+<li>GoDaddy域名设置，绑定GitHub</li>
+<li>安装git（默认）</li>
+<li>安装node.js</li>
+<li>安装Hexo</li>
+<li>配置SSH keys(本地git项目与远程的GitHub建立联系)</li>
+<li>关联Hexo与Github</li>
+<li>安装git部署插件</li>
+<li>更换主题</li>
+<li>发布博客</li>
+<li>添加 分类、标签和关于页面</li>
+<li>添加网易云跟帖</li>
+</ol>
+]]></content>
     
     <summary type="html">
     
+      &lt;ol&gt;
+&lt;li&gt;申请各个网站域名&lt;/li&gt;
+&lt;li&gt;GitHub创建各个仓库&lt;/li&gt;
+&lt;li&gt;GoDaddy域名设置，绑定GitHub&lt;/li&gt;
+&lt;li&gt;安装git（默认）&lt;/li&gt;
+&lt;li&gt;安装node.js&lt;/li&gt;
+&lt;li&gt;安装Hexo&lt;/li&gt;
+&lt;li&gt;配置SSH k
+    
     </summary>
     
+      <category term="Blog搭建" scheme="http://yoursite.com/categories/Blog%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="Blog搭建" scheme="http://yoursite.com/tags/Blog%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   

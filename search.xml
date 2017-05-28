@@ -3,7 +3,13 @@
   <entry>
     <title><![CDATA[Hexo+Github个人博客搭建]]></title>
     <url>%2F2017%2F05%2F27%2F20170528_Hexo-Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[申请各个网站域名 GitHub创建各个仓库 GoDaddy域名设置，绑定GitHub 安装git（默认） 安装node.js 安装Hexo 配置SSH keys(本地git项目与远程的GitHub建立联系) 关联Hexo与Github 安装git部署插件 更换主题 发布博客 添加 分类、标签和关于页面 添加网易云跟帖]]></content>
+      <categories>
+        <category>Blog搭建</category>
+      </categories>
+      <tags>
+        <tag>Blog搭建</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Java反汇编]]></title>
