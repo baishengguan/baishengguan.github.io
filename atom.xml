@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-10T16:04:37.613Z</updated>
+  <updated>2017-06-14T06:42:17.591Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>makeOS30days_1</title>
+    <link href="http://yoursite.com/2017/06/14/20170614_makeOS30days/"/>
+    <id>http://yoursite.com/2017/06/14/20170614_makeOS30days/</id>
+    <published>2017-06-14T06:18:52.000Z</published>
+    <updated>2017-06-14T06:42:17.591Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　之前一直想自己写一个小的OS，但由于时间和杂七杂八的因素，一直搁置。最近时间稍微宽松点，因此又萌生了写一个小的OS的想法，查阅了大部分关于OS的资料，最后决定先从最简单的开始，参考《30天自制操作系统》川合秀实，熟悉最简单的OS的搭建。</p>
+<a id="more"></a>
+<p>　　在makeOS的过程中，相关sourcecode将随时同步到我的 <a href="https://github.com/baishengguan/makeOS30days&quot;" target="_blank" rel="external">GitHub</a> 上，大家如果感兴趣，可自行下载。并且将sourcecode中的日文注释改为中文，方便大家理解。makeOS环境的所有资料我将会完成该OS后上传。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　之前一直想自己写一个小的OS，但由于时间和杂七杂八的因素，一直搁置。最近时间稍微宽松点，因此又萌生了写一个小的OS的想法，查阅了大部分关于OS的资料，最后决定先从最简单的开始，参考《30天自制操作系统》川合秀实，熟悉最简单的OS的搭建。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="makeOS30days" scheme="http://yoursite.com/categories/makeOS30days/"/>
+    
+    
+      <category term="makeOS30days" scheme="http://yoursite.com/tags/makeOS30days/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+Github个人博客搭建</title>
