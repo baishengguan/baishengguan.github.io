@@ -45,7 +45,7 @@
     <link href="http://yoursite.com/2017/05/27/20170528_Hexo-Github%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2017/05/27/20170528_Hexo-Github个人博客搭建/</id>
     <published>2017-05-27T15:38:16.000Z</published>
-    <updated>2017-06-14T06:58:52.559Z</updated>
+    <updated>2017-06-14T06:59:59.047Z</updated>
     
     <content type="html"><![CDATA[<p>　　最近花费了两周的时间搭建了一个简单的个人Blog,主要的想法是记录分享一些自己在学习工作中的想法。在之前的工作学习过程中，习惯在笔记本上记录相关的问题解决方案，随着时间的积累，笔记本攒了好几个，但查找起来特别不方便，因此搭建该博客记录生活中的点点滴滴。</p>
 <a id="more"></a>
@@ -62,7 +62,10 @@
 <li>更换主题</li>
 <li>发布博客</li>
 <li>添加 分类、标签和关于页面</li>
-<li>添加网易云跟帖<h2 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h2>具体的Blog搭建过程请参考下面链接，自己也是参考下述内容完成Blog的搭建。</li>
+<li>添加网易云跟帖</li>
+</ol>
+<h2 id="相关参考"><a href="#相关参考" class="headerlink" title="相关参考"></a>相关参考</h2><p>具体的Blog搭建过程请参考下面链接，自己也是参考下述内容完成Blog的搭建。</p>
+<ol>
 <li>廖雪峰的官方网站：<a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">http://www.liaoxuefeng.com/</a></li>
 <li>Godaddy域名申请：<a href="https://sg.godaddy.com/" title="Godaddy" target="_blank" rel="external">https://sg.godaddy.com/</a></li>
 <li>零基础免费搭建个人博客：<a href="http://hifor.net/2015/07/01/%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo-github/" target="_blank" rel="external">链接</a></li>
