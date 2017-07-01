@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-14T06:55:15.080Z</updated>
+  <updated>2017-07-01T03:41:03.548Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>OpenCV环境配置</title>
+    <link href="http://yoursite.com/2017/07/01/20170701_OpenCV%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2017/07/01/20170701_OpenCV环境配置/</id>
+    <published>2017-07-01T01:15:07.753Z</published>
+    <updated>2017-07-01T03:41:03.548Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　最近在做行人检测方面的相关内容，需要用到OpenCV，但环境配置了多半天，因此将配置中的注意事项记录下来。<br><a id="more"></a><br>　　OpenCV目前主要分两个版本，分别是Version2.4和Version3.0，这两个版本之间差别比较大，改动也比较多，大家可以到官网上查看，这里只记录注意事项。
+　　</p>
+<p>　　在配置OpenCV环境时，目录opencv-&gt;build-&gt;x86 or X64，配置时需要自己选择，一般选择X86就可以，网上配置过程很多，读者可参考。
+　　</p>
+<p>　　OpenCV需要和VS兼容，不同版本的OpenCV需要使用不同的VS版本。在目录opencv-&gt;build-&gt;x86 or X64下，会有VS10、VS11、VS12等目录，具体兼容关系如下：</p>
+<pre><code>VC10 = Visual Studio 2010
+VC11 = Visual Studio 2012
+VC12 = Visual Studio 2013
+</code></pre><p>在实际操作中，需要查看VC版本，看是否对应。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　最近在做行人检测方面的相关内容，需要用到OpenCV，但环境配置了多半天，因此将配置中的注意事项记录下来。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="install" scheme="http://yoursite.com/categories/install/"/>
+    
+    
+      <category term="install" scheme="http://yoursite.com/tags/install/"/>
+    
+  </entry>
   
   <entry>
     <title>makeOS30days_1</title>

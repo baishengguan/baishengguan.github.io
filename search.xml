@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[OpenCV环境配置]]></title>
+    <url>%2F2017%2F07%2F01%2F20170701_OpenCV%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[最近在做行人检测方面的相关内容，需要用到OpenCV，但环境配置了多半天，因此将配置中的注意事项记录下来。 OpenCV目前主要分两个版本，分别是Version2.4和Version3.0，这两个版本之间差别比较大，改动也比较多，大家可以到官网上查看，这里只记录注意事项。 在配置OpenCV环境时，目录opencv-&gt;build-&gt;x86 or X64，配置时需要自己选择，一般选择X86就可以，网上配置过程很多，读者可参考。 OpenCV需要和VS兼容，不同版本的OpenCV需要使用不同的VS版本。在目录opencv-&gt;build-&gt;x86 or X64下，会有VS10、VS11、VS12等目录，具体兼容关系如下： VC10 = Visual Studio 2010 VC11 = Visual Studio 2012 VC12 = Visual Studio 2013 在实际操作中，需要查看VC版本，看是否对应。]]></content>
+      <categories>
+        <category>install</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[makeOS30days_1]]></title>
     <url>%2F2017%2F06%2F14%2F20170614_makeOS30days%2F</url>
     <content type="text"><![CDATA[之前一直想自己写一个小的OS，但由于时间和杂七杂八的因素，一直搁置。最近时间稍微宽松点，因此又萌生了写一个小的OS的想法，查阅了大部分关于OS的资料，最后决定先从最简单的开始，参考《30天自制操作系统》川合秀实，熟悉最简单的OS的搭建。 在makeOS的过程中，相关sourcecode将随时同步到我的 GitHub 上，并且将sourcecode中的日文注释改为中文，大家如果感兴趣，可自行下载。makeOS环境的所有资料我将会完成该OS后上传。 目前为止，已经看了前两章的内容，讲的比较通俗易懂，比较适合初学者学习。]]></content>
