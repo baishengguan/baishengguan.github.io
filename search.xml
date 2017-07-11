@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Pycharm-Python环境配置]]></title>
-    <url>%2F2017%2F07%2F05%2F20170705_Pycharm-python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%2F</url>
+    <url>%2F2017%2F07%2F05%2F20170705_Pycharm-Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[在Win7环境下学习Python，PyCharm加载numpy等库时不方便，简单的做法：如果PC上安装Canopy，可加载Canopy环境中的python.exe，方便利用Canopy中的相关库。 加载Canopy环境中的python.exe： 定制个性化的开发环境： 配置完之后的效果： 在实际使用中，Pycharm集成开发环境非常好用，但是占内存较大，如果pc性能不好，运行起来会比较卡。]]></content>
       <categories>
         <category>install</category>
