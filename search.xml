@@ -12,8 +12,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Image格式转换(ppm-jpg)]]></title>
-    <url>%2F2017%2F07%2F12%2F20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2(ppm-jpg)%2F</url>
+    <title><![CDATA[Image格式转换ppm-jpg]]></title>
+    <url>%2F2017%2F07%2F12%2F20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2ppm-jpg%2F</url>
     <content type="text"><![CDATA[最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。 ppm to jpg的具体code(Python write)： import os from PIL import Image #img = Image.open(&apos;C:\Users\gbs\Desktop\pedestrians128x64\per00001.ppm&apos;) #img.save(&apos;C:\Users\gbs\Desktop\mit\per00001.jpg&apos;) #img.show() pathOrigin = &apos;C:\Users\gbs\Desktop\pedestrians128x64\\&apos; pathDestination = &apos;C:\Users\gbs\Desktop\mit\\&apos; pathDir = os.listdir(pathOrigin) #print pathDir for i in pathDir: child = os.path.join(pathOrigin, i) #print child img = Image.open(child) img.save(pathDestination + i[0:9] + &apos;jpg&apos;) PIL(Python Imaging Library,Python图像处理库)，Image为其中的重要模块。]]></content>
       <categories>
         <category>PedestrianDetection</category>

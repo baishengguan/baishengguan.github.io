@@ -48,11 +48,11 @@
   </entry>
   
   <entry>
-    <title>Image格式转换(ppm-jpg)</title>
-    <link href="http://yoursite.com/2017/07/12/20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2(ppm-jpg)/"/>
-    <id>http://yoursite.com/2017/07/12/20170713_Image格式转换(ppm-jpg)/</id>
+    <title>Image格式转换ppm-jpg</title>
+    <link href="http://yoursite.com/2017/07/12/20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2ppm-jpg/"/>
+    <id>http://yoursite.com/2017/07/12/20170713_Image格式转换ppm-jpg/</id>
     <published>2017-07-12T11:19:15.618Z</published>
-    <updated>2017-07-12T11:52:58.432Z</updated>
+    <updated>2017-07-12T11:55:11.352Z</updated>
     
     <content type="html"><![CDATA[<p>　　最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。<br><a id="more"></a></p>
 <p>ppm to jpg的具体code(Python write)：</p>
