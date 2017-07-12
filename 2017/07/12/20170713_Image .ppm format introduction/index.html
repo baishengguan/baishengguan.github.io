@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
+<meta name="description" content="ppm格式也是一种图像格式，下面讲解ppm文件格式。">
 <meta name="keywords" content="PedestrianDetection">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Image .ppm format introduction">
 <meta property="og:url" content="http://yoursite.com/2017/07/12/20170713_Image .ppm format introduction/index.html">
 <meta property="og:site_name" content="Baisheng&#39;s Blog">
-<meta property="og:description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
-<meta property="og:updated_time" content="2017-07-12T11:39:26.542Z">
+<meta property="og:description" content="ppm格式也是一种图像格式，下面讲解ppm文件格式。">
+<meta property="og:updated_time" content="2017-07-12T13:30:50.808Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Image .ppm format introduction">
-<meta name="twitter:description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
+<meta name="twitter:description" content="ppm格式也是一种图像格式，下面讲解ppm文件格式。">
 
 
 
@@ -405,16 +405,15 @@
       
 
       
-        <p>　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入<code>import Image</code>将无法找到Image包。<br><a id="more"></a></p>
-<p>一些教程默认直接写：</p>
-<pre><code>import Image
-</code></pre><p>但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)：</p>
-<pre><code>pip install PIL
-</code></pre><p>则找不到Image模块，所以必须先安装Pillow，在cmd中运行：</p>
-<pre><code>pip install Pillow
-</code></pre><p>因此导入<code>image</code>时的写法：</p>
-<pre><code>from PIL import Image
-</code></pre><p>至此，bug解决。</p>
+        <p>　　ppm格式也是一种图像格式，下面讲解ppm文件格式。<br><a id="more"></a><br>　　PPM图像格式分为两部分，分别为头部和图像数据两部分。</p>
+<p>头部由3部分组成(通过换行或空格进行分割，一般PPM的标准是空格)：</p>
+<pre><code>1.P3或P6，指明PPM的编码格式; 
+2.图像的宽度和高度，通过ASCII表示;
+3.最大像素值，0-255字节表示。
+</code></pre><p>图像数据部分：</p>
+<pre><code>ASCII格式：按RGB的顺序排列，RGB中间用空格隔开，图片每一行用回车隔开；
+Binary格式：PPM用24bits代表每一个像素，红绿蓝分别占用8bits。
+</code></pre><p>关于更相信的说明请参考：<a href="http://blog.csdn.net/kinghzkingkkk/article/details/70226214" target="_blank" rel="external">PPM文件格式详解</a></p>
 
       
     </div>
