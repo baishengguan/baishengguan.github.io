@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-12T11:16:32.016Z</updated>
+  <updated>2017-07-12T11:39:26.542Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Image .ppm format introduction</title>
+    <link href="http://yoursite.com/2017/07/12/20170713_Image%20.ppm%20format%20introduction/"/>
+    <id>http://yoursite.com/2017/07/12/20170713_Image .ppm format introduction/</id>
+    <published>2017-07-12T11:21:19.890Z</published>
+    <updated>2017-07-12T11:39:26.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入<code>import Image</code>将无法找到Image包。<br><a id="more"></a></p>
+<p>一些教程默认直接写：</p>
+<pre><code>import Image
+</code></pre><p>但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)：</p>
+<pre><code>pip install PIL
+</code></pre><p>则找不到Image模块，所以必须先安装Pillow，在cmd中运行：</p>
+<pre><code>pip install Pillow
+</code></pre><p>因此导入<code>image</code>时的写法：</p>
+<pre><code>from PIL import Image
+</code></pre><p>至此，bug解决。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入&lt;code&gt;import Image&lt;/code&gt;将无法找到Image包。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="PedestrianDetection" scheme="http://yoursite.com/categories/PedestrianDetection/"/>
+    
+    
+      <category term="PedestrianDetection" scheme="http://yoursite.com/tags/PedestrianDetection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Image格式转换(ppm-jpg)</title>
+    <link href="http://yoursite.com/2017/07/12/20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2(ppm-jpg)/"/>
+    <id>http://yoursite.com/2017/07/12/20170713_Image格式转换(ppm-jpg)/</id>
+    <published>2017-07-12T11:19:15.618Z</published>
+    <updated>2017-07-12T11:52:58.432Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。<br><a id="more"></a></p>
+<p>ppm to jpg的具体code(Python write)：</p>
+<pre><code>import os
+from PIL import Image
+
+#img = Image.open(&apos;C:\Users\gbs\Desktop\pedestrians128x64\per00001.ppm&apos;)
+#img.save(&apos;C:\Users\gbs\Desktop\mit\per00001.jpg&apos;)
+#img.show()
+
+pathOrigin = &apos;C:\Users\gbs\Desktop\pedestrians128x64\\&apos;
+pathDestination = &apos;C:\Users\gbs\Desktop\mit\\&apos;
+pathDir = os.listdir(pathOrigin)
+#print pathDir
+for i in pathDir:
+    child = os.path.join(pathOrigin, i)  
+    #print child
+    img = Image.open(child)
+    img.save(pathDestination + i[0:9] + &apos;jpg&apos;)
+</code></pre><p>PIL(Python Imaging Library,Python图像处理库)，Image为其中的重要模块。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="PedestrianDetection" scheme="http://yoursite.com/categories/PedestrianDetection/"/>
+    
+    
+      <category term="PedestrianDetection" scheme="http://yoursite.com/tags/PedestrianDetection/"/>
+    
+  </entry>
   
   <entry>
     <title>Import Python图像处理模块</title>

@@ -72,7 +72,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python," />
+  <meta name="keywords" content="PedestrianDetection," />
 
 
 
@@ -90,17 +90,17 @@
 
 
 
-<meta name="description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
-<meta name="keywords" content="Python">
+<meta name="description" content="最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。">
+<meta name="keywords" content="PedestrianDetection">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Import Python图像处理模块">
-<meta property="og:url" content="http://yoursite.com/2017/07/12/20170712_Import Python图像处理模块/index.html">
+<meta property="og:title" content="Image格式转换(ppm-jpg)">
+<meta property="og:url" content="http://yoursite.com/2017/07/12/20170713_Image格式转换(ppm-jpg)/index.html">
 <meta property="og:site_name" content="Baisheng&#39;s Blog">
-<meta property="og:description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
-<meta property="og:updated_time" content="2017-07-12T11:16:32.016Z">
+<meta property="og:description" content="最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。">
+<meta property="og:updated_time" content="2017-07-12T11:52:58.432Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Import Python图像处理模块">
-<meta name="twitter:description" content="参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。">
+<meta name="twitter:title" content="Image格式转换(ppm-jpg)">
+<meta name="twitter:description" content="最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。">
 
 
 
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/07/12/20170712_Import Python图像处理模块/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/12/20170713_Image格式转换(ppm-jpg)/"/>
 
 
 
 
 
-  <title>Import Python图像处理模块 | Baisheng's Blog</title>
+  <title>Image格式转换(ppm-jpg) | Baisheng's Blog</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -308,7 +308,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/12/20170712_Import Python图像处理模块/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/12/20170713_Image格式转换(ppm-jpg)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Baisheng">
@@ -325,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Import Python图像处理模块</h1>
+          <h1 class="post-title" itemprop="name headline">Image格式转换(ppm-jpg)</h1>
         
 
         <div class="post-meta">
@@ -337,7 +337,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-12T19:00:09+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-12T19:19:15+08:00">
                 2017-07-12
               </time>
             
@@ -360,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
+                  <a href="/categories/PedestrianDetection/" itemprop="url" rel="index">
+                    <span itemprop="name">PedestrianDetection</span>
                   </a>
                 </span>
 
@@ -377,7 +377,7 @@
 
           
           
-             <span id="/2017/07/12/20170712_Import Python图像处理模块/" class="leancloud_visitors" data-flag-title="Import Python图像处理模块">
+             <span id="/2017/07/12/20170713_Image格式转换(ppm-jpg)/" class="leancloud_visitors" data-flag-title="Image格式转换(ppm-jpg)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -405,16 +405,25 @@
       
 
       
-        <p>　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入<code>import Image</code>将无法找到Image包。<br><a id="more"></a></p>
-<p>一些教程默认直接写：</p>
-<pre><code>import Image
-</code></pre><p>但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)：</p>
-<pre><code>pip install PIL
-</code></pre><p>则找不到Image模块，所以必须先安装Pillow，在cmd中运行：</p>
-<pre><code>pip install Pillow
-</code></pre><p>因此导入<code>image</code>时的写法：</p>
-<pre><code>from PIL import Image
-</code></pre><p>至此，bug解决。</p>
+        <p>　　最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。<br><a id="more"></a></p>
+<p>ppm to jpg的具体code(Python write)：</p>
+<pre><code>import os
+from PIL import Image
+
+#img = Image.open(&apos;C:\Users\gbs\Desktop\pedestrians128x64\per00001.ppm&apos;)
+#img.save(&apos;C:\Users\gbs\Desktop\mit\per00001.jpg&apos;)
+#img.show()
+
+pathOrigin = &apos;C:\Users\gbs\Desktop\pedestrians128x64\\&apos;
+pathDestination = &apos;C:\Users\gbs\Desktop\mit\\&apos;
+pathDir = os.listdir(pathOrigin)
+#print pathDir
+for i in pathDir:
+    child = os.path.join(pathOrigin, i)  
+    #print child
+    img = Image.open(child)
+    img.save(pathDestination + i[0:9] + &apos;jpg&apos;)
+</code></pre><p>PIL(Python Imaging Library,Python图像处理库)，Image为其中的重要模块。</p>
 
       
     </div>
@@ -449,7 +458,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"># Python</a>
+            <a href="/tags/PedestrianDetection/" rel="tag"># PedestrianDetection</a>
           
         </div>
       
@@ -462,8 +471,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/07/11/20170705_Pycharm-Python环境配置/" rel="next" title="Pycharm and Python环境配置">
-                <i class="fa fa-chevron-left"></i> Pycharm and Python环境配置
+              <a href="/2017/07/12/20170712_Import Python图像处理模块/" rel="next" title="Import Python图像处理模块">
+                <i class="fa fa-chevron-left"></i> Import Python图像处理模块
               </a>
             
           </div>
@@ -472,8 +481,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/12/20170713_Image格式转换(ppm-jpg)/" rel="prev" title="Image格式转换(ppm-jpg)">
-                Image格式转换(ppm-jpg) <i class="fa fa-chevron-right"></i>
+              <a href="/2017/07/12/20170713_Image .ppm format introduction/" rel="prev" title="Image .ppm format introduction">
+                Image .ppm format introduction <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

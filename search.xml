@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Image .ppm format introduction]]></title>
+    <url>%2F2017%2F07%2F12%2F20170713_Image%20.ppm%20format%20introduction%2F</url>
+    <content type="text"><![CDATA[参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。 一些教程默认直接写： import Image 但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)： pip install PIL 则找不到Image模块，所以必须先安装Pillow，在cmd中运行： pip install Pillow 因此导入image时的写法： from PIL import Image 至此，bug解决。]]></content>
+      <categories>
+        <category>PedestrianDetection</category>
+      </categories>
+      <tags>
+        <tag>PedestrianDetection</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Image格式转换(ppm-jpg)]]></title>
+    <url>%2F2017%2F07%2F12%2F20170713_Image%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2(ppm-jpg)%2F</url>
+    <content type="text"><![CDATA[最近在做行人检测方面的相关研究，下载的MIT行人数据库中的image格式为ppm,而ppm图像格式在win7下无法查看(Ubuntu下可以)，因此将其转换为jpg格式。 ppm to jpg的具体code(Python write)： import os from PIL import Image #img = Image.open(&apos;C:\Users\gbs\Desktop\pedestrians128x64\per00001.ppm&apos;) #img.save(&apos;C:\Users\gbs\Desktop\mit\per00001.jpg&apos;) #img.show() pathOrigin = &apos;C:\Users\gbs\Desktop\pedestrians128x64\\&apos; pathDestination = &apos;C:\Users\gbs\Desktop\mit\\&apos; pathDir = os.listdir(pathOrigin) #print pathDir for i in pathDir: child = os.path.join(pathOrigin, i) #print child img = Image.open(child) img.save(pathDestination + i[0:9] + &apos;jpg&apos;) PIL(Python Imaging Library,Python图像处理库)，Image为其中的重要模块。]]></content>
+      <categories>
+        <category>PedestrianDetection</category>
+      </categories>
+      <tags>
+        <tag>PedestrianDetection</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Import Python图像处理模块]]></title>
     <url>%2F2017%2F07%2F12%2F20170712_Import%20Python%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E6%A8%A1%E5%9D%97%2F</url>
     <content type="text"><![CDATA[参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。 一些教程默认直接写： import Image 但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)： pip install PIL 则找不到Image模块，所以必须先安装Pillow，在cmd中运行： pip install Pillow 因此导入image时的写法： from PIL import Image 至此，bug解决。]]></content>
