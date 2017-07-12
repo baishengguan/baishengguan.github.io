@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-11T09:30:31.579Z</updated>
+  <updated>2017-07-12T11:16:32.016Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Import Python图像处理模块</title>
+    <link href="http://yoursite.com/2017/07/12/20170712_Import%20Python%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E6%A8%A1%E5%9D%97/"/>
+    <id>http://yoursite.com/2017/07/12/20170712_Import Python图像处理模块/</id>
+    <published>2017-07-12T11:00:09.508Z</published>
+    <updated>2017-07-12T11:16:32.016Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入<code>import Image</code>将无法找到Image包。<br><a id="more"></a></p>
+<p>一些教程默认直接写：</p>
+<pre><code>import Image
+</code></pre><p>但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)：</p>
+<pre><code>pip install PIL
+</code></pre><p>则找不到Image模块，所以必须先安装Pillow，在cmd中运行：</p>
+<pre><code>pip install Pillow
+</code></pre><p>因此导入<code>image</code>时的写法：</p>
+<pre><code>from PIL import Image
+</code></pre><p>至此，bug解决。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入&lt;code&gt;import Image&lt;/code&gt;将无法找到Image包。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>Pycharm and Python环境配置</title>

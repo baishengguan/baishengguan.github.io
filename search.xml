@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Import Python图像处理模块]]></title>
+    <url>%2F2017%2F07%2F12%2F20170712_Import%20Python%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E6%A8%A1%E5%9D%97%2F</url>
+    <content type="text"><![CDATA[参考网上教程，在导入PIL(Python Imaging Library Python,图像处理类库)时，提示无法找到image包，具体原因是是平台的问题，在Win764位系统上直接写入import Image将无法找到Image包。 一些教程默认直接写： import Image 但在window764位系统中如果没有在cmd中执行(Anaconda默认安装PIL)： pip install PIL 则找不到Image模块，所以必须先安装Pillow，在cmd中运行： pip install Pillow 因此导入image时的写法： from PIL import Image 至此，bug解决。]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Pycharm and Python环境配置]]></title>
     <url>%2F2017%2F07%2F11%2F20170705_Pycharm-Python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[在Win7环境下学习Python，PyCharm加载numpy等库时不方便，简单的做法：如果PC上安装Canopy，可加载Canopy环境中的python.exe，方便利用Canopy中的相关库。 加载Canopy环境中的python.exe： 定制个性化的开发环境： 配置完之后的效果： 在实际使用中，Pycharm集成开发环境非常好用，但是占内存较大，如果pc性能不好，运行起来会比较卡。]]></content>
