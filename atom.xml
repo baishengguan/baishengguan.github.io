@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-12T13:30:50.808Z</updated>
+  <updated>2017-08-31T15:52:33.260Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,102 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java Input and Output</title>
+    <link href="http://yoursite.com/2017/08/31/20170831_Java%20Input%20and%20Output/"/>
+    <id>http://yoursite.com/2017/08/31/20170831_Java Input and Output/</id>
+    <published>2017-08-31T08:48:49.800Z</published>
+    <updated>2017-08-31T15:52:33.260Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　刚开始找工作，做了几个公司的算法题，有的只需要写函数，有的需要自己写输入输出。虽然自己之前一直用Java，但没太注意Java控制台的输入输出处理，因此有的算法题因为输入有问题导致编译失败。故在此总结一下Java中常用的输入数据处理的几种方式及注意事项。<br><a id="more"></a></p>
+<h2 id="next"><a href="#next" class="headerlink" title="next()"></a>next()</h2><p>　　next()读取到有效字符后才能结束输入，对输入有效字符之前遇到的空格键、Tab键或Enter键等结束符，next()方法会自动将其去掉，<strong>只有在输入有效字符之后，next()方法才将其后输入的空格键、tab键或enter键等视为分隔符或结束符。</strong></p>
+<h2 id="nextLine"><a href="#nextLine" class="headerlink" title="nextLine()"></a>nextLine()</h2><p>　　<strong>nextLine()方法的结束符只是Enter键</strong>，即nextLine()方法返回的是Enter键之前的所有字符，它是可以得到带空格的字符串的。</p>
+<p>　　next()只读空格之前的数据，后面的nextLine()会继续读取前面留下的数据。</p>
+<p>　　想要读取整行，就是用nextLine()。</p>
+<p>　　读取数字也可以使用nextLine()，不过需要转换：Integer.parseInt(cin.nextLine())。</p>
+<p>　　注意在next()、nextInt()与nextLine()一起使用时，next()、nextInt()往往会读取部分数据（会留下”\n”或者空格之后的数据）。</p>
+<h2 id="example1：输入多行时next-和nextLine-的区别"><a href="#example1：输入多行时next-和nextLine-的区别" class="headerlink" title="example1：输入多行时next()和nextLine()的区别"></a>example1：输入多行时next()和nextLine()的区别</h2><pre><code>public class Main {
+public static void main(String args[]){
+    Scanner input = new Scanner(System.in);
+    int n = input.nextInt();
+    String str = input.nextLine();
+    System.out.println(&quot;END&quot;)
+    }
+}
+</code></pre><p>　　从执行结果上看，貌似直接跳过了<code>String str = input.nextLine()</code>。其实不是，原因是：<code>nextInt()</code>只读取数值，剩下”\n”没有读取，<code>nextLine()</code>会读取”\n”并结束。</p>
+<p>　　<strong>如果想在nextInt()之后读取一行，需要在nextInt()之后额外加上cin.nextLine()</strong>，如下：</p>
+<pre><code>public class Main {
+public static void main(String args[]){
+    Scanner input = new Scanner(System.in);
+    int n = input.nextInt();
+    input.nextLine();
+    String str = input.nextLine();
+    System.out.println(&quot;END&quot;);
+    }
+}
+</code></pre><h2 id="example2：输入多行"><a href="#example2：输入多行" class="headerlink" title="example2：输入多行"></a>example2：输入多行</h2><p>　　输入要求第一行输入m个数，用空格隔开，第二行输入一个数，并将第一行的m个数存入数组中。</p>
+<pre><code>public class Main {
+public static void main(String args[]){
+    Scanner input = new Scanner(System.in);
+    String str = input.nextLine();
+    int k = input.nextInt();
+
+    String[] strs = str.split(&quot; &quot;);
+    int[] m = new int[strs.length];
+    for (int i = 0; i &lt; strs.length; i++) 
+    m[i] = Integer.parseInt(strs[i]);
+
+    for (int i = 0; i &lt; m.length; i++) 
+    System.out.println(m[i]);
+    }
+}
+</code></pre><h2 id="example3：输入多行"><a href="#example3：输入多行" class="headerlink" title="example3：输入多行"></a>example3：输入多行</h2><p>　　输入要求第一行输入n(代表行数)，之后输入n行数据或者字符串。</p>
+<p>case1:输入n行数据</p>
+<pre><code>public class Main {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        int[] nums = new int[n];
+        for (int i = 0; i &lt; n; i++) {
+            nums[i] = input.nextInt();
+        }
+
+        for (int i = 0; i &lt; n; i++) {
+            System.out.println(nums[i]);
+        }
+    }
+}
+</code></pre><p>case2:输入n行字符串(两种写法)</p>
+<pre><code>public class Main {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+       // input.nextLine();
+        String[] nums = new String[n];
+        for (int i = 0; i &lt; n; i++) {
+            //nums[i] = input.nextLine();
+            nums[i] = input.next();
+        }
+        for (int i = 0; i &lt; n; i++) {
+            System.out.println(nums[i]);
+        }
+    }
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　刚开始找工作，做了几个公司的算法题，有的只需要写函数，有的需要自己写输入输出。虽然自己之前一直用Java，但没太注意Java控制台的输入输出处理，因此有的算法题因为输入有问题导致编译失败。故在此总结一下Java中常用的输入数据处理的几种方式及注意事项。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Image .ppm format introduction</title>
