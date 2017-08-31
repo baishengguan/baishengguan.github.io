@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-08-31T15:59:26.352Z</updated>
+  <updated>2017-08-31T16:00:50.304Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/08/31/20170831_Java%20Input%20and%20Output/"/>
     <id>http://yoursite.com/2017/08/31/20170831_Java Input and Output/</id>
     <published>2017-08-31T08:48:49.800Z</published>
-    <updated>2017-08-31T15:59:26.352Z</updated>
+    <updated>2017-08-31T16:00:50.304Z</updated>
     
     <content type="html"><![CDATA[<p>　　刚开始找工作，做了几个公司的算法题，有的只需要写函数，有的需要自己写输入输出。虽然自己之前一直用Java，但没太注意Java控制台的输入输出处理，因此有的算法题因为输入问题导致编译失败。故在此总结一下Java中常用的输入数据处理的几种方式及注意事项。<br><a id="more"></a></p>
 <h2 id="next"><a href="#next" class="headerlink" title="next()"></a>next()</h2><p>　　next()读取到有效字符后才能结束输入，对输入有效字符之前遇到的空格键、Tab键或Enter键等结束符，next()方法会自动将其去掉，<strong>只有在输入有效字符之后，next()方法才将其后输入的空格键、tab键或enter键等视为分隔符或结束符。</strong></p>
@@ -96,7 +96,7 @@ public static void main(String args[]){
         }
     }
 }
-</code></pre><p>　　以上就是在算法编程题中经常出现的几种输入情况，有关Java IO的详细介绍请参考《Thing inJava》</p>
+</code></pre><p>　　以上就是在算法编程题中经常出现的几种输入情况，对算法编程题基本够用。有关Java IO的详细介绍请参考《Thing in Java》</p>
 ]]></content>
     
     <summary type="html">
