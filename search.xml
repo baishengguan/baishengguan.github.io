@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Java EndNoteX8 intall question]]></title>
     <url>%2F2017%2F10%2F08%2F20171008_EndNote%20Install%2F</url>
-    <content type="text"><![CDATA[目前看的论文比较多，打算通过EndNote管理，但发现之前的不能用，因此重装了EndNote,并记录安装中的注意事项。 注意事项 卸载pc之前的install package(一定要清理注册表，否则后续安装会出现问题)； install EndNoteX8; 安装完成后需要重启pc(不重启的话可能会出现错误)。]]></content>
+    <content type="text"><![CDATA[目前看的论文比较多，打算通过EndNote管理，但发现之前的不能用，因此重装了EndNote，并记录安装中的注意事项。 注意事项 卸载pc之前的install package(一定要清理注册表，否则后续安装会出现问题)； install EndNoteX8； 安装完成后需要重启pc(不重启的话可能会出现错误)。]]></content>
       <categories>
         <category>install</category>
       </categories>
